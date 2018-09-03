@@ -1,0 +1,21 @@
+.denemeBuyuk{
+    font-size: xx-small;
+    color: white;
+    background: red;
+    font: caption;
+    margin: 1px;
+  
+}
+
+.bgColor{
+    background: orange;
+    color:greenyellow;
+    margin: 1px;
+}
+
+.loginPanel{
+    width: 320px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}

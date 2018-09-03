@@ -1,0 +1,35 @@
+
+<div class="container ">
+    <div class="row ">
+        <div class="loginPanel">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <div class="panel-title">
+                        Giris Paneli
+                    </div> 
+                </div>
+            </div>
+            <div style="text-align: center; color:red"> <% if(typeof _isuser != 'undefined' || typeof _isuser == 'false' ){%>
+                Kullanıcı adını veya şifreyi hatalı girdiniz... 
+                       <%}%>
+            </div> 
+            <div class="panel-body">
+                <form action="/login" method="POST">
+                    <div style="margin-bottom: 25px" class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user">
+                        </i></span>
+                        <input id="login-username" type="text" class="form-control" name="user" placeholder="UserName">
+                    </div>    
+                    <div style="margin-bottom: 25px" class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-sunglasses">
+                            </i></span>
+                            <input id="login-password" type="password" class="form-control" name="password" placeholder="press password">
+                    </div> 
+                    <input type="submit" class="btn btn-primary" value="Sign In">
+                    <a href="/login/signup" class="btn btn-default">Sign up</a>
+                </form>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,48 @@
+<div class="container">
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>AD </th>
+                <th>Soyad</th>
+                <th>Email</th>
+                <th>User Name </th>
+                <th>Islemler </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <%for(var i=0; i<users.length;i++){%>
+                <%if(i%2==0){%>
+                    <tr class="warning">
+                        <%}else{%>
+                            <tr class="info">
+                                <%}%>
+                                    <td>
+                                        <%=i+1%>
+                                    </td>
+                                    <td>
+                                        <%=users[i].ad%>
+                                    </td>
+                                    <td>
+                                        <%=users[i].soyad%>
+                                    </td>
+                                    <td>
+                                        <%=users[i].email%>
+                                    </td>
+                                    <td>
+                                        <%=users[i].username%>
+                                    </td>
+                                    <td>
+                                        <div>
+                                            <a href="/login/userdelete/<%=users[i].user%>" class="glyphicon glyphicon-trash"
+                                                hint: "delete"></a>
+                                        </div>
+                                    </td>
+                            </tr>
+                            <%}%>
+        </tbody>
+    </table>
+
+</div>
